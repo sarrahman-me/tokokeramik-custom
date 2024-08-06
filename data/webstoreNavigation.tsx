@@ -20,8 +20,4 @@ export const webstore_navigation: {
     title: "Kalkulator",
     icon: <TbTools />,
   },
-  {
-    title: "Bacaan",
-    icon: <RiBookLine />,
-  },
 ];

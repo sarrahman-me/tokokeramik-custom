@@ -1,12 +1,9 @@
 export const isActivePage = (
   href: string,
   pathname: string,
-  id_webstore?: string
 ): boolean => {
   // Jika href adalah '/dashboard', periksa apakah pathname juga '/dashboard'
-  if (href === "/dashboard") {
-    return pathname === href;
-  } else if (href === `/site/${id_webstore}`) {
+  if (href === `/`) {
     return pathname === href;
   }
 

@@ -1,3 +1,4 @@
+import { SearchBar } from "@/components/commons";
 import { CatalogProducts } from "@/components/layouts";
 import IWebstore from "@/interfaces/webstore";
 import { GetDataApi } from "@/utils/fetcher"
@@ -12,6 +13,7 @@ export default async function Home() {
 
   return (
     <div className="space-y-7">
+      <SearchBar route={`/barang/search`} />
 
       {/* banner */}
       {webstore?.banner_url && (

@@ -21,8 +21,7 @@ export default function AppBar({
   const navigationMap: Record<string, string> = {
     Home: `/`,
     Barang: `/barang`,
-    Kalkulator: `/site/${webstore.id_webstore}/kalkulator`,
-    Bacaan: `/blog`,
+    Kalkulator: `/kalkulator`,
   };
 
   return (
@@ -52,7 +51,6 @@ export default function AppBar({
           const isActive = isActivePage(
             navigationMap[item.title],
             pathname,
-            webstore.id_webstore
           );
 
           return (
