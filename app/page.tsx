@@ -1,4 +1,4 @@
-import { AppBar, CatalogProducts } from "@/components/layouts";
+import { CatalogProducts } from "@/components/layouts";
 import IWebstore from "@/interfaces/webstore";
 import { GetDataApi } from "@/utils/fetcher"
 import Image from "next/image";
@@ -12,7 +12,6 @@ export default async function Home() {
 
   return (
     <div className="space-y-7">
-      <AppBar webstore={webstore} />
 
       {/* banner */}
       {webstore?.banner_url && (
@@ -23,6 +22,24 @@ export default async function Home() {
 
       {/* catalog */}
       <CatalogProducts id_webstore={id_webstore} />
+
+
+      {/* maps url */}
+      {webstore?.maps_url ? (
+        <div className=" border rounded-md p-1 md:p-2 space-y-3">
+          <p className="bg-secondary text-primary-900 p-0.5 rounded-md font-medium text-lg">
+            Alamat Toko
+          </p>
+          <iframe
+            src={webstore?.maps_url}
+            width="100%"
+            height="400"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      ) : null}
     </div>
   )
 }

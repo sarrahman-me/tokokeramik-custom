@@ -100,7 +100,7 @@ export default function CatalogProducts({
           <CardProduct
             route={
               id_webstore
-                ? `/site/${id_webstore}/barang/${barang.sku}`
+                ? `/barang/${barang.sku}`
                 : `/dashboard/barang/${barang.sku}`
             }
             key={i}

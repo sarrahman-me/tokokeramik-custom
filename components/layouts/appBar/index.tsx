@@ -19,8 +19,8 @@ export default function AppBar({
 
   // Objek pemetaan antara judul navigasi dan URL yang sesuai
   const navigationMap: Record<string, string> = {
-    Home: `/site/${webstore.id_webstore}`,
-    Barang: `/site/${webstore.id_webstore}/barang`,
+    Home: `/`,
+    Barang: `/barang`,
     Kalkulator: `/site/${webstore.id_webstore}/kalkulator`,
     Bacaan: `/blog`,
   };
