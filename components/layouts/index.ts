@@ -1,4 +1,5 @@
 import AppBar from "./appBar";
+import BottomBarNavigation from "./bottomBar";
 import CatalogProducts from "./catalogProducts";
 import Kalkulator from "./kalkulatorKeramik";
 import RecomendByProduct from "./recomendationByProduct";
@@ -11,5 +12,6 @@ export {
   RecomendByProduct,
   SimiliarProducts,
   VisualPattern,
-  Kalkulator
+  Kalkulator,
+  BottomBarNavigation
 }

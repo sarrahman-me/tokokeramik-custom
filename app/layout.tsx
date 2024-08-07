@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GetDataApi } from "@/utils/fetcher";
-import { AppBar } from "@/components/layouts";
+import { AppBar, BottomBarNavigation } from "@/components/layouts";
 import IWebstore from "@/interfaces/webstore";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -41,7 +41,7 @@ export default async function RootLayout({
         <div className="mx-auto max-w-7xl p-2 md:p-4 lg:p-6">{children}</div>
         <footer className="flex justify-center items-center space-y-5 flex-col pb-20 p-2">
           <p className="text-xs text-secondary-medium/50 text-center">
-            Powered By{" "}
+            Dibuat Menggunakan{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -52,6 +52,9 @@ export default async function RootLayout({
             </a>
           </p>
         </footer>
+        <div className="p-2 bg-secondary fixed w-full bottom-0 block md:hidden">
+          <BottomBarNavigation />
+        </div>
       </body>
     </html>
   );
