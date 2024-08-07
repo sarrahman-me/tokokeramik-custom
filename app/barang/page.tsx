@@ -1,8 +1,13 @@
 import { SearchBar } from "@/components/commons";
 import { CatalogProducts } from "@/components/layouts";
+import { Metadata } from "next";
 import { Suspense } from "react";
 
 const id_webstore = process.env.NEXT_PUBLIC_ID_WEBSTORE;
+
+export const metadata: Metadata = {
+  title: "Halaman Barang"
+};
 
 export default function Home() {
   return (
