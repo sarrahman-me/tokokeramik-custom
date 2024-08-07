@@ -19,7 +19,7 @@ export default async function Home() {
       {/* banner */}
       {webstore?.banner_url && (
         <div className="flex justify-center w-full rounded">
-          <Image width="700" height="450" src={webstore.banner_url} alt="banner" />
+          <Image width="1200" height="520" src={webstore.banner_url} alt="banner" />
         </div>
       )}
 
