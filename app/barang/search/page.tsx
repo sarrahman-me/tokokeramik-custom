@@ -57,7 +57,7 @@ export default async function Page({
 
   return (
     <div className="space-y-6">
-      <SearchBar route={`/site/${id_webstore}/barang/search`} />
+      <SearchBar route={`/barang/search`} />
       {searchParams.query.trim() !== "" && (
         <span className="flex items-center space-x-2 text-xs text-primary-600">
           <MdSearch />
