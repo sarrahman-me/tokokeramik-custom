@@ -2,7 +2,7 @@
 import IBarang from "@/interfaces/barang";
 import isNewProduct from "@/utils/isNewProduct";
 import { trackProduct } from "@/utils/trackProduct";
-import Image from "next/image";
+//import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function CardProduct({
@@ -42,7 +42,7 @@ export default function CardProduct({
           </div>
         )}
 
-        <Image
+        <img
           className="object-contain max-h-44 md:max-h-40 rounded-t"
           src={
             barang?.gambar_url ||
