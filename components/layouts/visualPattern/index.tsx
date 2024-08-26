@@ -1,6 +1,6 @@
 "use client";
 import { Select, TipsText } from "@/components/commons";
-import Image from "next/image";
+//import Image from "next/image";
 import React, { useState } from "react";
 
 type VisualPatternProps = {
@@ -119,7 +119,7 @@ const ImagePattern = ({ imageUrl }: ImagePatternProps) => {
   };
 
   return (
-    <Image
+    <img
       onContextMenu={handleKlikKanan}
       src={
         imageUrl ||
