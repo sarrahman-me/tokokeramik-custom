@@ -4,6 +4,7 @@ import "./globals.css";
 import { GetDataApi } from "@/utils/fetcher";
 import { AppBar, BottomBarNavigation } from "@/components/layouts";
 import IWebstore from "@/interfaces/webstore";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -56,6 +57,7 @@ export default async function RootLayout({
           <BottomBarNavigation />
         </div>
       </body>
+      <Analytics />
     </html>
   );
 }
