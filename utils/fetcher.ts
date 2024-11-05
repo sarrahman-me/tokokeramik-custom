@@ -10,7 +10,7 @@ export async function GetDataApi(
         "Content-Type": "application/json",
         ...(token && { Authorization: `Bearer ${token}` }),
       },
-      next: { revalidate: 0 },
+      cache: 'no-store',
       credentials: "include",
     });
     const status = response.status;
